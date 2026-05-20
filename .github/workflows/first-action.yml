@@ -1,0 +1,24 @@
+name: First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Show current folder
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+      - name: Run hello script
+        run: bash hello.sh
