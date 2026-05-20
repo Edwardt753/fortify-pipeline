@@ -17,5 +17,5 @@ jobs:
       - name: Check Python version
         run: python --version
 
-      - name: Run simple Python command
-        run: python -c "print('Hello from Python inside GitHub Actions!')"
+      - name: Run Python file
+        run: python main.py
