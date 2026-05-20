@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo "This will fail now"
-exit 1
+echo "Hello from GitHub Actions!"
+echo "The workflow is passing again."
+exit 0
